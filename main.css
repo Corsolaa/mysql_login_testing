@@ -1,0 +1,79 @@
+:root {
+    --login-background: white;
+    --text-color: black;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, serif;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+
+    max-width: 400px;
+    height: 100vh;
+
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+
+    padding: 15px;
+
+    background: var(--login-background);
+    color: var(--text-color);
+    box-shadow: 0 0 4px darkgray;
+}
+
+.login label {
+    display: flex;
+
+    position: relative;
+    margin-top: 15px;
+}
+
+.login input {
+    padding: 10px 10px 10px 17px;
+
+    width: 100%;
+
+    background: var(--login-background);;
+    color: var(--text-color);
+
+    border: 2px var(--text-color) solid;
+    border-radius: 10px;
+}
+
+.login input:focus {
+    outline: none !important;
+}
+
+.login span {
+    position: absolute;
+    font-style: italic;
+    font-weight: bold;
+    top: -6px;
+    right: 274px;
+    background: var(--login-background);;
+    padding: 0 5px;
+}
+
+.login .submit_button {
+    font-weight: bold;
+    margin-top: 15px;
+    padding: 10px;
+    width: fit-content;
+}
+
+.login .submit_button:hover {
+    cursor: pointer;
+    background:lightgray;
+}
